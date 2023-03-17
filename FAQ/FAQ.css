@@ -1,0 +1,226 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    background-color: hsl(258, 45%, 44%);
+}
+
+.box-wrapper{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 70%;
+    z-index: 10;
+    position: relative;
+    left: -100px;
+    background-color: hsl(258, 45%, 44%);
+}
+
+.box-wrapper img{
+    z-index: 100;
+    position: relative;
+    right: 22px;
+    top: 50px;
+}
+
+.content-wrapper{
+    background-color: #fafafa;
+    width: 70%;
+    height: 70%;
+    border-radius: 25px;
+    position: relative;
+    left: -100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    background: url(./bg-pattern-desktop.svg);
+    background-size: cover;
+}
+
+.content-wrapper .images img{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: -100px;
+}
+
+.text{
+    width: 45%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.text h1{
+    font-size:  20px;
+}
+
+#cover1{
+    width: 100%;
+}
+
+.text p{
+    font-size:  12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.quest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quest:hover{
+    color: red;
+}
+
+.ans{
+    opacity: .7;
+    display: none;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.quest .fa-chevron-up{
+    font-size: 15px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    color: red;
+}
+
+.quest .fa-chevron-down{
+    font-size: 15px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+.faq{
+    margin-top: 10px;
+}
+
+.faq hr{
+    height: 1px;
+    opacity: .6;
+    background-color: grey;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px){
+
+    html{
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+    }
+
+    .main-container{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 10px;
+        bottom: 50px;
+    }
+
+    .content-wrapper .images img{
+        width: 250px;
+        height: 170px;
+        position: relative;
+        bottom: 120px;
+        left: 15px;
+    }
+
+    .text{
+        width: 100%;
+        position: relative;
+        bottom: 90px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text h1{
+        font-weight: 900;
+        position: relative;
+        left: 90px;
+    }
+
+    .text .quest p{
+        font-size: 11px;
+    }
+
+    .text .ans p{
+        font-size: 10px;
+    }
+
+    .box-wrapper{
+        background-color: transparent;
+    }
+
+    .box-wrapper img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 80px;
+        left: 10px;
+    }
+
+    .quest .fa-chevron-up, .quest .fa-chevron-down{
+        font-size: 10px;
+    }
+}
+
